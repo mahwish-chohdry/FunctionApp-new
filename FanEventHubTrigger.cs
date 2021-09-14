@@ -18,10 +18,10 @@ namespace Xavor.Function
     {
         #region properties
 
-        private static string baseUrl = "https://fanapistaging.azurewebsites.net";
-        private static string connectionString = "Server=tcp:fanserverstaging.database.windows.net,1433;Initial Catalog=smartfan;Persist Security Info=False;User ID=smartfan;Password=Xavor@1999;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-        private static string notificationhubConnectionstring = "Endpoint=sb://nsfanboxnotificationhub.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=1BSSuuC+aUpBvlDqnM6FMzyzAZuSRgHfBb8EO/xtheQ="; //notificationhub connection string
-        private static string notificationhubName = "FanBoxNotificationHub";
+        private static string baseUrl = "https://apiappterraform.azurewebsites.net";
+        private static string connectionString = "Server=tcp:sqlserverterraform.database.windows.net,1433;Initial Catalog=SQLDBterraform;Persist Security Info=False;User ID=Mahwish;Password=Banana1234567;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private static string notificationhubConnectionstring = "Endpoint=sb://nhub-terraform.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=+zdljJaDkobCQ89shqdhJeOblJyzr0u6sg71nRxd78I="; //notificationhub connection string
+        private static string notificationhubName = "Hub-Terraform";
 
         private static string setStatus = baseUrl + "/api/SmartDeviceStatus/SetDeviceStatus";
         private static string setAlarms = baseUrl + "/api/SmartDeviceStatus/SetDeviceAlarms";
@@ -33,7 +33,7 @@ namespace Xavor.Function
         #endregion
 
         [FunctionName("FanEventHubTrigger")]
-        public static async Task Run([EventHubTrigger("fanboxeventhub", Connection = "Connectionstring")] EventData[] events, ILogger log)
+        public static async Task Run([EventHubTrigger("instanceterraform", Connection = "Connectionstring")] EventData[] events, ILogger log)
         {
             var exceptions = new List<Exception>();
 
