@@ -1,8 +1,8 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=storageterraformfan;AccountKey=Qehr4rN07m9tAEhuHc8mQ4gRVRZmMYKk2ZyKpQOKhZi04G6en3SogUnG55NhKlS8evnTBDCNZBVQSqou7CBrKg==;EndpointSuffix=core.windows.net",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=storageterraformfan;AccountKey=24SpZylAByKuVfUAsGgm3CgRxVnyuXwpQ6r5Yc1nzVq73lIodnC3ojVXx6WAoPnvZZzK1x0vA3LShgahdjFhNg==;EndpointSuffix=core.windows.net",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
-    "Connectionstring": "Endpoint=sb://eventhubterraform.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=sL9DDDSmX6X8c5vpyoZUb1Fxf89f/OiC1cVt0JfR/wE="
+    "Connectionstring": "Endpoint=sb://eventhubterraform.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=X/XM4zSL9SjuBE2vtr4wFZe3pUWyHqGmPV9kqU+ecek="
   }
 }
