@@ -19,7 +19,7 @@ namespace Xavor.Function
         #region properties
 
         private static string baseUrl = "https://apiappterraform.azurewebsites.net";
-        private static string connectionString = "Server=tcp:sqlserverterraform.database.windows.net,1433;Initial Catalog=SQLDBterraform;Persist Security Info=False;User ID=Mahwish;Password={your_password};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+        private static string connectionString = "Server=tcp:sqlserverterraform.database.windows.net,1433;Initial Catalog=SQLDBterraform;Persist Security Info=False;User ID=Mahwish;Password=Banana1234567;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         private static string notificationhubConnectionstring = "Endpoint=sb://nhub-terraform.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=hRT+Eh116NwQ0zsQ9/IoUpe2KExnRx91mQeEhOK/HnQ="; //notificationhub connection string
         private static string notificationhubName = "Hub-Terraform";
 
